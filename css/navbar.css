@@ -1,0 +1,3 @@
+	@media (min-width: 768px) { .navbar-collapse ul {margin-top: 0px; } }	
+	.logo{float:left;}
+	.navbar-collapse .navbar-nav.navbar-left:first-child { margin-left: 0px; }

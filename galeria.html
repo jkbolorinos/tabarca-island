@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rental">
+    <meta name="author" content="John Bolorinos">
+
+    <link rel="shortcut icon" href="ico/logo.png">
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42939527-1', 'tabarcaisland.com');
+  ga('send', 'pageview');
+
+</script>
+
+    <title>Galeria - Tabarca Island</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Navbar CSS -->
+    <link href="css/navbar.css" rel="stylesheet">
+
+    <!-- Custom CSS for the 'Thumbnail Gallery' Template -->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link href="lightbox/bootstrap-lightbox.css" rel="stylesheet">
+
+    <!-- Blueimp Bootstrap Touch-enabled gallery -->
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    
+    <style>
+    .navbar {
+     margin: 0;
+     background: url('background.jpg');
+     background-size: 100% 100%;
+     background-repeat:no-repeat;
+    display: compact;
+     font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+   }
+
+     .navbar-inverse .navbar-brand {
+        color: #e7d2aa;
+        background:url('stiched-cloth.jpg');
+        background-size: 100% 100%;
+        background-repeat:no-repeat;
+        display: compact;
+        text-shadow: 1px 1px 3px black;
+     }
+
+     .navbar-btn {
+      background:url('british_flag.jpg');
+      background-size: 100% 100%;
+      background-repeat:no-repeat;
+      display: compact;
+     }
+
+      .navbar-inverse .navbar-nav > li > a:hover,
+      .navbar-default .navbar-nav > li > a:focus {
+        color: #f4e4d9;
+        background-color: transparent;
+      }
+
+           .nav-tabs > li, .nav-pills > li {
+          float:none;
+          display:inline-block;
+          *display:inline; /* ie7 fix */
+           zoom:1; /* hasLayout ie7 trigger */
+      }
+
+      .nav-tabs, .nav-pills {
+          text-align:center;
+      }
+
+.navbar-inverse .navbar-nav > li > a{
+        color:#e7d2aa;
+      }
+
+      .carousel-caption {
+        color:#e7d2aa;
+      }
+
+      .footer {
+        background-color:#d1be94;
+        text-align:center;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="inicio.html">Tabarca Island</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="sobre.html">Sobre Tabarca</a></li>
+            <li class="active"><a href="galeria.html">Galeria</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Idioma <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="gallery.html">English</a></li>
+                <li><a href="#">Español</a></li>
+              </ul>
+            </li>  
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+  <!--
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-8">
+        <a class="logo" href="index.html"><img src="ico/logo.png"></a>
+      
+        
+        <div class="row">
+
+          <div class="col-md-8 col-sm-7 col-xs-6">
+            <nav class="navbar navbar-inverse" role="navigation">
+              
+              
+              
+
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  
+                </div>
+        
+                
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+          </div>
+       </div> 
+
+     </div>
+   </div> -->
+    
+  <div class="container">  
+    <div class="container">
+
+      <div class="row">
+        
+        <div class="col-lg-12">
+          <h1 class="page-header">Galeria</h1>
+          <ol class="breadcrumb">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li class="active">Galeria</li>
+          </ol>
+        </div>
+      </div>
+
+      <div align="center">
+          <ul id="filterOptions" class="filter nav nav-pills">
+            <li class="active"><a href="#" class="all">Todos</a></li>
+            <li><a href="#" class="interior">Interior</a></li>
+            <li><a href="#" class="exterior">Exterior</a></li>
+            <li><a href="#" class="island">Isla</a></li>
+          </ul>
+        </div>
+      <hr>
+        
+         <div id="ourHolder">
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/island30.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island30.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/island27.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island27.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/island26.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island26.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/island25.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island25.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb interior">
+            <a href="gallery/interior1.jpg" data-toggle="lightbox" data-gallery><img class="thumbnail img-responsive" src="gallery/interior1.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/island1.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island1.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/island29.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island29.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb exterior">
+             <a data-toggle="lightbox" href="gallery/exterior1.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/exterior1.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island2.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island2.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb exterior">
+             <a data-toggle="lightbox" href="gallery/exterior2.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/exterior2.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island4.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island4.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb interior">
+             <a data-toggle="lightbox" href="gallery/interior4.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/interior4.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb exterior">
+             <a data-toggle="lightbox" href="gallery/exterior3.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/exterior3.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island5.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island5.jpg"></a>
+          </div>
+           <div class="col-lg-3 col-md-4 col-xs-6 thumb exterior">
+             <a data-toggle="lightbox" href="gallery/exterior4.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/exterior4.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island6.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island6.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb exterior">
+             <a data-toggle="lightbox" href="gallery/exterior5.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/exterior5.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island7.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island7.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb exterior">
+             <a data-toggle="lightbox" href="gallery/exterior6.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/exterior6.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island8.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island8.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb exterior">
+             <a data-toggle="lightbox" href="gallery/exterior7.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/exterior7.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island9.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island9.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb interior">
+             <a data-toggle="lightbox" href="gallery/interior6.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/interior6.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island10.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island10.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island11.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island11.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb interior">
+             <a data-toggle="lightbox" href="gallery/interior8.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/interior8.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island12.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island12.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island13.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island13.jpg"></a>
+          </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island14.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island14.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island15.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island15.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island16.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island16.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island17.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island17.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/island18.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island18.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb interior">
+             <a data-toggle="lightbox" href="gallery/interior11.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/interior11.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/island24.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island24.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/island23.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island23.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/island22.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island22.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/island20.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island20.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/island19.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island19.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb interior">
+             <a data-toggle="lightbox" href="gallery/interior10.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/interior10.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb interior">
+             <a data-toggle="lightbox" href="gallery/interior5.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/interior5.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb interior">
+             <a data-toggle="lightbox" href="gallery/interior3.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/interior3.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/island21.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/island21.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb exterior">
+            <a data-toggle="lightbox" href="gallery/new1.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/new1.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb exterior">
+             <a data-toggle="lightbox" href="gallery/new2.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/new2.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/new3.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/new3.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+             <a data-toggle="lightbox" href="gallery/new4.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/new4.jpg"></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb island">
+            <a data-toggle="lightbox" href="gallery/new5.jpg" data-gallery><img class="thumbnail img-responsive" src="gallery/new5.jpg"></a>
+          </div>
+        </div><!-- /.ourHolder -->
+      </div>
+      </div>
+      
+<div class="footer">
+ <hr>
+            <a href="http://tabarcaisland.com/sobre.html">Sobre Tabarca</a> |
+            <a href="http://tabarcaisland.com/contacto.php">Contacto</a>  |
+            <a href="http://tabarcaisland.com/sobre.html">Terminos de Servicio</a>
+            
+           <div class="center">
+            <a href="http://www.facebook.com/tabarcaisland"><img src="ico/facebook.png"></a>
+            <a href="http://plus.google.com/+Tabarcaisland"><img src="ico/googleplus.png"></a> 
+          </div>
+            <p>&copy; Tabarca Island 2017 <a href="http://cbolorinos.com/">cbolorinos</a> <a href="http://jkbolorinos.com/">jbolorinos</a></p>
+
+</div><!-- footer -->
+
+  <!-- javascript -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Lightbox script 
+  <script src="lightbox/ekko-lightbox.js"></script>
+
+  <script>
+   $(document).ready(function($) {
+           $('#open-image').click(function(e) {
+               e.preventDefault();
+               $(this).ekkoLightbox(data-footer);
+           });
+           $('#open-youtube').click(function(e) {
+               e.preventDefault();
+               $(this).ekkoLightbox();
+           });
+           $('#open-source-image').click(function(e) {
+               e.preventDefault();
+               $(this).ekkoLightbox();
+           });
+           $('#open-source-youtube').click(function(e) {
+               e.preventDefault();
+               $(this).ekkoLightbox();
+           });
+        });
+  </script> -->
+
+<script src="js/jquery.quicksand.js"></script>
+  <script>
+  $(document).ready(function () {
+    $('#filterOptions li a').click(function () {
+        var ourClass = $(this).attr('class');
+        $('#filterOptions li').removeClass('active');
+        $(this).parent().addClass('active');
+
+        if (ourClass == 'all') {
+            $('#ourHolder').children().show();
+        } else {
+            $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
+            $('#ourHolder').children('div.' + ourClass).show();
+        }
+
+        return false;
+    });
+});
+  </script>
+  <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+
+<script>
+document.getElementById('ourHolder div a').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox 
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol> -->
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        
+                       < Anterior
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Siguiente >
+                        
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  </body>
+
+</html>

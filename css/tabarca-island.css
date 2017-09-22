@@ -1,0 +1,31 @@
+.navbar {
+   margin: 0;
+   background: url('background.jpg');
+   background-size: 100% 100%;
+   background-repeat:no-repeat;
+   display: compact;
+   font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ .navbar-inverse .navbar-brand {
+    color: #181818;
+    background:url('stiched-cloth.jpg');
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    display: compact;
+    text-shadow: 1px 1px 3px #666, -1px -1px 3px #FFF, 1px 1px #666, -1px -1px #FFF;
+ }
+
+  .navbar-inverse .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #FFFF00;
+    background-color: transparent;
+  }
+
+  .navbar-inverse .navbar-nav > li > a{
+    color:#FFE900;
+  }
+
+  .carousel-caption {
+    color:#FFE900;
+  }
